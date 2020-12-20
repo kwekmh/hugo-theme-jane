@@ -6,7 +6,7 @@
     {{ partial "post/i18nlist.html" . }}
     <div class="post-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
-        {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+        {{ .Date.Format (.Site.Params.dateFormatToUse | default "") }}
       </time>
     </div>
   </header>
